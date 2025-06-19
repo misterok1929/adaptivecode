@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muslim-Friendly Dublin Travel Guide | Omar Industries</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  background:
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    url('images/gaelic_pattern.webp') center/cover fixed;
+}
+header {
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+nav {
+  background: #0a9396;
+  padding: 0.8rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  display: inline-block;
+}
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav a:hover::before {
+  width: 80%;
+}
+nav a:active {
+  transform: translateY(0);
+}
+main {
+  padding: 1.5rem;
+}
+.guide-section {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+.section-header {
+  background: #ee9b00;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.section-content {
+  padding: 1.5rem;
+}
+.location-card, .food-card, .prayer-card {
+  border-left: 4px solid #0a9396;
+  background: rgba(240, 248, 255, 0.9);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.food-card { border-left-color: #ca6702; background: rgba(255, 248, 240, 0.9); }
+.prayer-card { border-left-color: #ae2012; background: rgba(253, 240, 240, 0.9); }
+.image-container {
+  margin: 1.5rem 0;
+  text-align: center;
+  position: relative;
+  min-height: 150px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  background: #001219;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+@media (min-width: 601px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .image-container img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1025px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .image-container img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .image-container img {
+    width: 100%;
+  }
+  nav a {
+    padding: 0.6rem 1rem;
+    margin: 0.2rem;
+    display: inline-block;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<picture>
+  <source media="(min-width:756px)" srcset="images/omarind.webp" type="image/webp">
+  <source media="(min-width:456px)" srcset="images/omarind.jpeg" type="image/jpeg">
+  <img src="images/omarind.jpeg" alt="Omar Industries Logo" class="logo" loading="lazy" width="200" height="100">
+</picture>
+<h1>Muslim-Friendly Dublin Guide</h1>
+<p>Culture, Prayer & Halal Dining in Ireland's Capital</p>
+</header>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="#places">PLACES</a>
+  <a href="#prayer">PRAYER</a>
+  <a href="#food">FOOD</a>
+  <a href="about_us.html">ABOUT US</a>
+  <a href="contact_us.html">CONTACT US</a>
+</nav>
+
+<main>
+  <section id="places" class="guide-section">
+    <div class="section-header">
+      <h2>Places We Recommend Visiting</h2>
+    </div>
+    <div class="section-content">
+      <div class="image-container">
+        <picture>
+          <source srcset="images/hapennybridge.webp" type="image/webp">
+          <img src="images/hapennybridge.jpeg" alt="Ha'Penny Bridge Dublin" loading="lazy" width="800" height="600">
+        </picture>
+      </div>
+      <div class="card-container">
+        <div class="location-card">
+          <h3>Trinity College & Book of Kells</h3>
+          <p>Ireland's oldest university with the breathtaking Long Room library and famous 9th-century Book of Kells manuscript.</p>
+          <p><strong>Tip:</strong> Visit early to avoid crowds.</p>
+        </div>
+        <div class="location-card">
+          <h3>Ha'penny Bridge</h3>
+          <p>Dublin's iconic pedestrian bridge over the River Liffey, perfect for photos especially at sunset.</p>
+        </div>
+        <div class="location-card">
+          <h3>Temple Bar District</h3>
+          <p>Vibrant cultural quarter with street art, galleries, and live music (daytime visits recommended).</p>
+        </div>
+        <div class="location-card">
+          <h3>National Gallery of Ireland</h3>
+          <p>Free admission to view masterpieces from Irish and European artists across centuries.</p>
+        </div>
+        <div class="location-card">
+          <h3>National Museum of Ireland</h3>
+          <p>Fascinating archaeology exhibits including Celtic gold and ancient bog bodies.</p>
+        </div>
+        <div class="location-card">
+          <h3>The Spire of Dublin</h3>
+          <p>120m tall modern monument in the city center, a great meeting point.</p>
+        </div>
+        <div class="location-card">
+          <h3>Penneys & Dunne's Stores</h3>
+          <p>Classic Irish retailers for affordable fashion and quality Irish-made goods.</p>
+        </div>
+        <div class="location-card">
+          <h3>Chester Beatty Library</h3>
+          <p>Exceptional collection of Islamic manuscripts and world art (free admission).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prayer" class="guide-section">
+    <div class="section-header">
+      <h2>Prayer Spaces in Dublin</h2>
+    </div>
+    <div class="section-content">
+      <div class="image-container">
+        <picture>
+          <source srcset="images/dublinmosque.webp" type="image/webp">
+          <img src="images/dublinmosque.jpeg" alt="Dublin City Mosque" loading="lazy" width="800" height="600">
+        </picture>
+      </div>
+      <div class="card-container">
+        <div class="prayer-card">
+          <h3>Dublin City Mosque</h3>
+          <p>163 South Circular Road, Dock 1</p>
+          <p>Convenient city center location with regular prayers and Jumu'ah.</p>
+        </div>
+        <div class="prayer-card">
+          <h3>Islamic Cultural Centre of Ireland</h3>
+          <p>19 Roebuck Road, Clonskeagh</p>
+          <p>Large mosque with excellent facilities including wudu areas and library.</p>
+        </div>
+        <div class="prayer-card">
+          <h3>Faizan E Madinah Mosque</h3>
+          <p>1 Leighton Court, Dublin 6</p>
+          <p>Beautiful mosque with welcoming atmosphere and separate prayer spaces.</p>
+        </div>
+        <div class="prayer-card">
+          <h3>Prayer Room at Dublin Airport</h3>
+          <p>Terminal 1, near Gate 34</p>
+          <p>Multifaith prayer room available 24/7 for travelers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="food" class="guide-section">
+    <div class="section-header">
+      <h2>Halal Dining Options</h2>
+    </div>
+    <div class="section-content">
+      <div class="image-container">
+        <picture>
+          <source srcset="images/spicebag.webp" type="image/webp">
+          <img src="images/spicebag.jpeg" alt="Spice Bag from Xian Chinese" loading="lazy" width="800" height="600">
+        </picture>
+      </div>
+      <div class="card-container">
+        <div class="food-card">
+          <h3>Bambino's Pizza</h3>
+          <p>Authentic halal Italian pizza in Dublin city center (Desk 1 location).</p>
+          <p><strong>Must-try:</strong> Their signature Diavola pizza.</p>
+        </div>
+        <div class="food-card">
+          <h3>Xian Chinese</h3>
+          <p>Where we discovered Dublin's famous Spice Bag - a must-try halal Irish-Chinese fusion dish.</p>
+        </div>
+        <div class="food-card">
+          <h3>Marka Cadey</h3>
+          <p>Authentic Somali cuisine featuring delicious sambusas, hilib ari (grilled goat), and canjeero.</p>
+          <p><strong>Specialty:</strong> Try their Bariis iskukaris (Somali spiced rice with meat).</p>
+        </div>
+        <div class="food-card">
+          <h3>Keshk Cafe</h3>
+          <p>Cozy Egyptian restaurant serving authentic halal Middle Eastern cuisine.</p>
+        </div>
+        <div class="food-card">
+          <h3>Zaytoon</h3>
+          <p>Popular halal Persian kebabs and Middle Eastern dishes.</p>
+        </div>
+        <div class="food-card">
+          <h3>Umi Falafel</h3>
+          <p>100% vegetarian but many vegan and halal options, famous for their falafel.</p>
+        </div>
+        <div class="food-card">
+          <h3>Dada</h3>
+          <p>Halal Moroccan restaurant with beautiful decor and authentic tagines.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <picture>
+          <source srcset="images/bambinospizza.webp" type="image/webp">
+          <img src="images/bambinospizza.jpeg" alt="Bambino's Pizza" loading="lazy" width="800" height="600">
+        </picture>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Omar Industries Travel Blog. All rights reserved.</p>
+  <p>Muslim-Friendly Travel Guides</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Omar Industries</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  background:
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    url('images/gaelic_pattern.webp') center/cover fixed;
+}
+header {
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+nav {
+  background: #0a9396;
+  padding: 0.8rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  display: inline-block;
+}
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+form {
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+button {
+  background: #0a9396;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #005f73;
+}
+footer {
+  background: #001219;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  nav a {
+    padding: 0.6rem 1rem;
+    margin: 0.2rem;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<picture>
+  <source media="(min-width:756px)" srcset="images/omarind.webp" type="image/webp">
+  <source media="(min-width:456px)" srcset="images/omarind.jpeg" type="image/jpeg">
+  <img src="images/omarind.jpeg" alt="Omar Industries Logo" class="logo" loading="lazy" width="200" height="100">
+</picture>
+<h1>Contact Our Team</h1>
+</header>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="about_us.html">ABOUT US</a>
+  <a href="contact_us.html">CONTACT US</a>
+</nav>
+
+<main>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="subject">Subject</label>
+    <select id="subject">
+      <option>General Inquiry</option>
+      <option>Business Partnership</option>
+      <option>Content Suggestions</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div style="text-align:center; background:rgba(255,255,255,0.9); border-radius:8px; max-width:600px; margin:0 auto; padding:1rem;">
+    <h3>Direct Contact</h3>
+    <p>Email: <strong>okhaled1929@outlook.com</strong></p>
+    <p>UK Office: <strong>+44 1234 567890</strong></p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Omar Industries Travel Blog. All rights reserved.</p>
+</footer>
+</body>
+</html>
